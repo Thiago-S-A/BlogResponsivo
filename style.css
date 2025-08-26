@@ -1,0 +1,388 @@
+* {
+    font-family: Montserrat;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/*header*/
+#header {
+    display: flex;
+    background-color: #02A28F;
+    height: 100%;
+    color: white;
+    padding: 1rem 9.75rem 1rem 9.75rem;
+}
+
+#header h1 {
+    position: relative;
+    font-size: 2.25rem; 
+    background: none;
+}
+
+
+
+/*Imagem de Destaque*/
+#post-destaque {
+    display: grid;
+    grid-template-columns: repeat(2fr, 1fr);
+ 
+}
+
+#post-destaque img {
+    width: fixed 46.5rem;
+    height: fixed 24.75rem;
+    margin-top: 3.125rem;
+    margin-left: 9.75rem;
+    padding: 1.5rem;
+}
+
+
+
+/*Post Populares*/
+.tittle-posts  {
+    background-color: #00a88f;
+    color: white;
+    margin-top: 5.1875rem;
+    height: fixed 3rem;
+    width: 22.5rem;
+    border-radius: 0.625rem;
+    padding: 0.75rem 1.125rem;
+}
+
+#post-popular {
+ position: relative; 
+ top: 1.25rem;
+ right: 3.125rem;
+}
+
+ul {
+    list-style: none;
+}
+
+#post-destaque {
+    display: flex;
+}
+
+#post-populares ul {
+    padding: 0;
+    left: -0.5625rem;
+}
+
+#post-populares li {
+    background-color: white;
+    margin: 0.625rem;
+    border-radius: 0.625rem;
+    height: 6rem;
+    width: 22.5rem; 
+}
+
+#post-populares li img {
+    background:none;
+    position: relative;
+    right: 10.625rem;
+    top: -3.75rem;
+}
+
+#post-popular h3 {
+    background: none;
+    font-size: 0.875rem;
+    position: relative;
+    top: -9.375rem;
+    left: 10rem;
+}
+
+#post-popular p {
+    background: none;
+    font-size: 0.75rem;
+    position: relative;
+    top: -9.375rem;
+    left: 10rem;
+    margin-top: 0.5rem;
+}
+
+/*posts recentes*/
+#posts-recentes {
+    width: 46.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.6875rem;
+    background-color: #00a88f;
+    color: white;
+    border-radius: 0.5rem;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    margin-left: 12.375rem;
+}
+
+
+
+/*cards de post recente conteudo*/
+#posts-recentes h3, a {
+    background: none;
+}
+
+#posts-recentes a {
+    color: white;
+}
+
+.postCard{
+    background: white;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.postCard img {
+    opacity: 1;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.postCard h4 {
+    position: relative;
+    right: 0.5rem;
+}
+
+.postConteudo {
+    padding: 1rem;
+}
+
+.postConteudo .tag {
+    color: #00a88f;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+.postConteudo h4 {
+    margin: 0.5rem;
+    color: black;
+    font-weight: bold;
+}
+
+.postConteudo .desc {
+    font-size: 0.875rem;
+    margin: 0.5rem 0;
+    color: #616161;
+}
+
+#gridPost {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    padding-left: 12.375rem;
+}
+
+
+
+/*Categorias e post recente*/
+
+#inferiorSite{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.0625rem;
+}
+
+
+/*barra categorias*/
+#lista {
+left: 57.75rem;
+gap: 0.875rem;
+padding:  1.5rem 0rem 1.5rem 1.5rem;
+}
+
+#lista {
+    padding-right: 50%;
+}
+
+#lista li {
+    display: flex;
+    justify-content: space-between;
+}
+
+#lista ul {
+    padding: 0;
+}
+
+/*Categorias*/
+
+#categorias {
+    border-radius: 0.5rem;
+    position: relative; 
+    top: -0.625rem;
+    font-style: bold;
+    font-size: 1.25rem;
+}
+
+
+
+#lista h4 {
+    margin-bottom: 1rem;
+    color: white;
+    background:#02A28F;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    width: 22.5rem;
+    height: 48x; /* ← esse "48x" parece um erro */
+    gap: 0.625rem;
+    top: 7.5rem;
+    left: 57.8125rem;
+    border-radius: 0.625rem;
+    justify-content: space-between;
+    size: 1.25rem;
+}
+
+#lista-categorias {
+    list-style: none;
+    color: #616161;
+    text-align: left;
+    padding: 0;
+}
+
+#lista-categorias li {
+    margin-bottom: 0.5rem;
+    font-size: 0.875rem; 
+    font-style: bold;
+}
+
+
+@media (max-width: 384px) {
+
+* {
+    padding: 0;
+    overflow-x: hidden;
+}
+
+#tittle-posts {
+    max-width: 19rem;
+}
+
+#post-popular p {
+    display: grid;
+    grid-template-columns: min-content;
+}
+    
+  /* Header */
+  #header {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  #header h1 {
+    font-size: 2rem;
+  }
+
+  /* Post Destaque */
+  #post-destaque {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #post-destaque img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 1rem 0;
+    padding: 0;
+    border-radius: 8px;
+  }
+
+  #post-populares p {
+    position: relative;
+    
+  }
+
+  /* Post Populares */
+  #post-populares h2 {
+    width: 90%;
+    margin: 2rem auto 1rem auto;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  #post-popular {
+    position: relative;
+    top: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+
+  #post-populares li {
+    width: 90%;
+    margin: 1rem auto;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    height: auto;
+  }
+
+  #post-populares li img {
+    position: static;
+    width: 6rem;
+    height: auto;
+    margin-right: 1rem;
+    border-radius: 6px;
+  }
+
+  #post-popular h3,
+  #post-popular p {
+    position: static;
+    font-size: 1rem;
+    text-align: left;
+  }
+
+  /* Posts Recentes */
+  #posts-recentes {
+    max-width: 20rem;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  #gridPost {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+
+  /* Categorias e Parte Inferior */
+  #inferiorSite {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+
+  #lista {
+    padding: 1rem;
+    left: 0;
+  }
+
+  #lista h4 {
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+  #lista-categorias li {
+    padding-right: 0;
+    justify-content: space-between;
+    font-size: 1rem;
+  }
+  
+}
+
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #00a88f;
+    color: white;
+    margin-top: 20px;
+}
+
+p {
+    background: none;
+}
+
+
+
